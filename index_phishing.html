@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contents ="width=device-width,initial-scale=1.0">
+    <title>PHISHING URL DETECTION </title>
+</head>
+
+<body>
+  <div class="login" style="text-align: center;">
+       <h1 style="color:voilet;">Phishing URL Detection</h1>
+
+       <form action ="{{url_for('RESULT')}}"method="POST">
+
+
+	   <div> Enter URL : <input type="text" name="URL" placeholder="   URL   " required="required" /></div><br>
+
+
+            <button type ="submit" class="btn btn-primary btn-block btn-large" style="height:30px; width:80px">RESULT</button>
+        </form>
+
+        <br>
+        <br>
+        <div style="text-align: center;"><h4 style="color:voilet;">{{prediction_text}} </h4></div>
+
+  </div>
+
+</body>
+</html>
